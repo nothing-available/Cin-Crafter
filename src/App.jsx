@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-      <h1>Hii {url?.total_pages}</h1>
+      <h1>Hii</h1>
 
     </>
   )
