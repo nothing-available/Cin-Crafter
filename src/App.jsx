@@ -1,33 +1,25 @@
 import { useEffect } from "react"
-import { getMovies } from "./utils/api";
-import { useSelector, useDispatch } from 'react-redux'
-import { getApiConfiguration } from "./store/homeSlice";
+import { fetchDataFromApi } from "./utils/api"
+
 
 
 function App() {
 
-  const dispatch = useDispatch();
-  const { url } = useSelector((state) => state.home);
-
-  console.log(url)
-
   useEffect(() => {
-    apiTesting();
-  }, []);
+    apiTest();
+  }, [])
 
-  const apiTesting = () => {
-    getMovies('/movie/popular')
+  const apiTest = () => {
+    fetchDataFromApi('/movie/popular')
       .then((res) => {
-        console.log(res);
-        dispatch(getApiConfiguration(res));
-      });
-  };
+        console.log(res
+        )
+      })
+  }
 
   return (
-    <>
-      <h1>Hii</h1>
-
-    </>
+    <div>
+    </div>
   )
 }
 
