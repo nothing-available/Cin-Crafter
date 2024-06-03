@@ -1,10 +1,11 @@
-import "./style.scss"
 import Herobanner from "./heroBanner/HeroBanner"
+import "./style.scss"
+
 
 function Home() {
-    return (
-        <div className="homepage">
-            <Herobanner />
+    return(
+        <div>
+            <Herobanner/>
         </div>
     )
 }
