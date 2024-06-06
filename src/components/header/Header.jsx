@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./style.scss";
 import { useLocation, useNavigate } from "react-router-dom";
-import ContentWrapper from "../contentWrapper/ContentWrapper";
+import ContentWrapper from "../contentWrapper/ContentWrapper.jsx";
 import logo from "../../assets/movix-logo.svg";
 import { HiOutlineSearch } from "react-icons/hi";
 import { SlMenu } from "react-icons/sl";
@@ -23,8 +23,8 @@ function Header() {
 
     const controlNavbar = () => {
         // console.log(window.scrolly);
-        if (window.scrolly > 200) {
-            if (window.scrolly > lastScrolly && !mobileMenu) {
+        if (window.scrollY > 200) {
+            if (window.scrollY > lastScrolly && !mobileMenu) {
                 setshow("hide");
             } else {
                 setshow("show");
@@ -32,7 +32,7 @@ function Header() {
         } else {
             setshow("top");
         }
-        setlastScrolly(window.scrolly);
+        setlastScrolly(window.scrollY);
     };
 
     useEffect(() => {
