@@ -28,7 +28,7 @@ To embark on your cinematic journey with the Movie List project, follow these st
 
 1. **Clone the Repository**: Begin by cloning the project repository to your local machine using the following command:
    ```
-   git clone https://github.com/nothing-available/Cin-Crafter.git
+   https://github.com/nothing-available/Cin-Crafter.git
    ```
 
 2. **Navigate to the Directory**: Move to the project directory with:
