@@ -33,7 +33,7 @@ To embark on your cinematic journey with the Movie List project, follow these st
 
 2. **Navigate to the Directory**: Move to the project directory with:
    ```
-   cd Movie-List
+   cd Cin-Crafter
    ```
 
 3. **Install Dependencies**: Install the necessary project dependencies using:
